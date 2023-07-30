@@ -49,6 +49,7 @@ function play() {
     comX = 0;
     comY = 0;
     initInterpreter();
+    consoleText = "";
     running = true;
 }
 
