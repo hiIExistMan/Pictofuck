@@ -14,3 +14,5 @@ green 3 is mostly the same though it will jump back if the data is nonzero
 green 4 will simply halt the program
 the blues are all for directions and blue 1 2 3 and 4 will turn the direction to right down up and left
 the rest of the colors are there for no reason other than do allow you to make your sadness while writting a program in this language slightly smaller
+honestly you truly should not program anything in this for example here is the hello world program:
+![alt text](https://github.com/hiIExistMan/Pictofuck/blob/main/tutorialImages/HelloWorld.png?raw=true)
