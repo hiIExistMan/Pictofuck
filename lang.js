@@ -153,12 +153,10 @@ function movePointer() {
 
 function step() {
     let com = dictionary[color2int(program[comY][comX])];
-    console.log(color2int(program[comY][comX]))
     if(com) {
         com()
     }    
-    console.log(comX,comY);
-    console.log(com);
+
 
     movePointer();
 
