@@ -1,17 +1,9 @@
 .touchpad {
     display:grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(10,1fr);
     width:220px;
-    height:400px;
-    grid-template-areas:
-    "button button button button"
-    "button button button button"
-    "button button button button"
-    "button button button button"
-    "button button button button"
-    "button button button button"
-    "slider slider slider slider"
-    "textarea textarea textarea textarea"
+    height:455px;
 }
 .web-wrapper {
     display:grid;
@@ -22,6 +14,21 @@
 
 input[type=range] {
     grid-area:"slider";
+}
+
+.recreate-wrapper {
+    grid-row-start: 10;
+    grid-column-start:0;
+}
+
+.size-wrapper {
+    grid-row-start: 10;
+    grid-column-start:0;
+}
+
+.widthInput {
+    height:45px;
+    width:157px;
 }
 
 #screen {

@@ -15,6 +15,18 @@ function initProgram() {
     }
 }
 
+function newProgram() {
+    let w = Number(select(".widthInput").value());
+    console.log(w);
+    if(!w) return;
+    let h = w/2;
+    programWidth = w;
+    programHeight = h;
+    squareSize = width/w;
+    console.log(w);
+    initProgram();
+}
+
 function saveProgram() {
     let output = {
         program: []
@@ -70,7 +82,6 @@ function setup() {
     canv.mousePressed(mp)
     initProgram();
     cursorColor = color(255, 255, 255)
-    frameRate(2);
     createFileInput(load).class("programInput").parent(select(".file-wrapper"))
     select(".fpsSlider").changed(e => {
         frameRate(Number(e.target.value));
@@ -110,4 +121,5 @@ function changeCursorColor(e) {
     var targ = e.target || e.srcElement || e;
     if (targ.nodeType == 3) targ = targ.parentNode; // defeat Safari bug
     cursorColor = color(targ.style.backgroundColor);
+    console.log(`color(${red(cursorColor)}, ${green(cursorColor)}, ${blue(cursorColor)}),`);
 }
