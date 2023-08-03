@@ -18,12 +18,12 @@ input[type=range] {
 
 .recreate-wrapper {
     grid-row-start: 10;
-    grid-column-start:0;
+    grid-column-start:1;
 }
 
 .size-wrapper {
     grid-row-start: 10;
-    grid-column-start:0;
+    grid-column-start:2;
 }
 
 .widthInput {
